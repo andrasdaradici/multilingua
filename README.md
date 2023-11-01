@@ -30,3 +30,36 @@ A simple tool made for all your Unity Translation needs.
 - Language gets stored in the PlayerPrefs under the "CurrentLanguage" as an integer so you do not have to worry about saving the language.
 
 # Installation
+
+**<ins>Method A:</ins>** Importing the `.unitypackage` file.
+
+**Step 1: ** - Go to the releases tab in the repository
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/fab23d6c-0db3-4e3b-a1fa-7f754c6623ba)
+
+**Step 2: ** - Select the version you want to use
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/00c2bd3e-0243-4fd2-8fcb-be394cb5dc38)
+
+**Step 3: ** - Download the `.unitypackage` file.
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/7f91f6f5-68cd-43b6-9cf7-45b0c13b074f)
+
+**Step 4: ** - Locate the downloaded file on your computer and double-click it to import it into Unity, you should see this:
+Note: If you do not want to import the examples untick the box next to the "Examples" folder.
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/408a15fb-9caa-4091-82c7-a99fbbc99bde)
+
+**<ins>Method B:</ins>** - Downloading the source code
+
+**Step 1:** - Click on the "Code" and then on the "Download Zip" button on the repositories page
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/39389138-5b51-4ee4-9dda-2cf78938d480)
+
+**Step 2:** - After downloading the source code, locate it and extract it from the .zip archive
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/367f43b6-2d1c-4c7d-9a82-31d4e9478060)
+
+**Step 3:** - Locate the "MultiLingua" and "Plugins" folder and drag them into the "Assets" folder of your project
+
+![image](https://github.com/andrasdaradici/multilingua/assets/90605554/7b282fdb-0dc2-45a5-8fdc-fd7c70b214ac)
