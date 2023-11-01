@@ -34,6 +34,7 @@ public class LoadLanguage : MonoBehaviour
                 langIndex = value;
                 if (Languages[langIndex].XML) ReadValueXML();
                 if (Languages[langIndex].JSON) ReadValueJSON();
+                TextToChangeLanguage.font = Languages[langIndex].LanguageFont;
             }
         }
     }
@@ -138,17 +139,6 @@ public class LoadLanguage : MonoBehaviour
                     ErrorRead = "Invalid or missing node: \"" + Node + "\"";
                     ReadErrorCode = 3;
                 }
-                /*XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.LoadXml(xmlFile.text);
-                XmlNodeList nodes = xmlDoc.SelectNodes("/Root/" + Node);
-
-                foreach (XmlNode node in nodes)
-                {
-                    string value = node.SelectSingleNode(Element).InnerText;
-                    TextToChangeLanguage.text = value;
-                    ErrorRead = "Succesfully read data";
-                    ReadErrorCode = 0;
-                }*/
             }
             else
             {
