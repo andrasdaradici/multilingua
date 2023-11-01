@@ -16,7 +16,7 @@ A simple tool made for all your Unity Translation needs.
   
   ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/96f39eef-b46c-43f8-a039-88e25c7a8e5a)
   
-- Check if the file path inside the Language Item is valid or not and if the provided keys are valid or not
+- Check if the file path inside the Language Item is valid or not and if the provided keys are valid or not (They only show up in inspector when you run the project)
 
   ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/8fc5b9a6-ebe4-474b-81ac-e132770103d1)
 
