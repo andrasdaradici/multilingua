@@ -1,0 +1,10 @@
+{
+    "Root": {
+        "Menu": {
+            "GameTitle": "Játék cím"
+        },
+        "Subtitles": {
+            "Sub1": "Felirat példa ennek az Asset-nak"
+        }
+    }
+}

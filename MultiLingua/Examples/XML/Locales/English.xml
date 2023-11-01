@@ -1,0 +1,9 @@
+<Root>
+    <Menu>
+        <GameTitle>Game title</GameTitle>
+    </Menu>
+
+    <Subtitles>
+        <Sub1>Subtitle example for the asset</Sub1>
+    </Subtitles>
+</Root>

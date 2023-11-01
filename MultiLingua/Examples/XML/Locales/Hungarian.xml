@@ -1,0 +1,9 @@
+<Root>
+    <Menu>
+        <GameTitle>Játék cím</GameTitle>
+    </Menu>
+
+    <Subtitles>
+        <Sub1>Felirat példa ennek az Asset-nak</Sub1>
+    </Subtitles>
+</Root>
