@@ -64,3 +64,8 @@ Note: If you do not want to import the examples untick the box next to the "Exam
 Note: Do NOT remove the Plugins folder as this will break the whole code, the code uses JSON.NET to read the data from `.json` files.
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/7b282fdb-0dc2-45a5-8fdc-fd7c70b214ac)
+
+# Usage
+The usage of this asset will be shown in the wiki through the examples provided. 
+
+[Check out the wiki](https://github.com/andrasdaradici/multilingua/wiki/01-Overview)
