@@ -68,4 +68,4 @@ Note: Do NOT remove the Plugins folder as this will break the whole code, the co
 # Usage
 The usage of this asset will be shown in the wiki through the examples provided. 
 
-[Check out the wiki](https://github.com/andrasdaradici/multilingua/wiki/01-Overview)
+[Check out the wiki!](https://github.com/andrasdaradici/multilingua/wiki/01-Overview)
