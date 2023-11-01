@@ -149,7 +149,7 @@ public class LoadLanguageEditor : Editor
         }
         if (GUILayout.Button(new GUIContent("Documentation", "Stuck? Need in help? \nClick to view the Documentation."), buttonStyle))
         {
-            Application.OpenURL("https://github.com/andrasdaradici/multilingua");
+            Application.OpenURL("https://github.com/andrasdaradici/multilingua/wiki/01-Overview");
         }
     }
 
