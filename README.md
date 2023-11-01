@@ -45,7 +45,7 @@ A simple tool made for all your Unity Translation needs.
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/7f91f6f5-68cd-43b6-9cf7-45b0c13b074f)
 
-**Step 4:** - Locate the downloaded file on your computer and double-click it to import it into Unity, you should see this:
+**Step 4: ** - Locate the downloaded file on your computer and double-click it to import it into Unity, you should see this:
 Note: If you do not want to import the examples untick the box next to the "Examples" folder.
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/408a15fb-9caa-4091-82c7-a99fbbc99bde)
@@ -61,5 +61,6 @@ Note: If you do not want to import the examples untick the box next to the "Exam
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/367f43b6-2d1c-4c7d-9a82-31d4e9478060)
 
 **Step 3:** - Locate the "MultiLingua" and "Plugins" folder and drag them into the "Assets" folder of your project
+Note: Do NOT remove the Plugins folder as this will break the whole code, the code uses JSON.NET to read the data from `.json` files.
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/7b282fdb-0dc2-45a5-8fdc-fd7c70b214ac)
