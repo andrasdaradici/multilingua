@@ -14,7 +14,7 @@ using YamlDotNet.RepresentationModel;
 
 public class LoadLanguage : MonoBehaviour
 {
-    [HideInInspector] public string Version = "1.0.0";
+    [HideInInspector] public string Version = "1.1.0";
     [HideInInspector] public string NewestVersion = "1.0.0";
     [HideInInspector] public string VersionCheckURL = "http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt";
     [HideInInspector] public bool NeedToUpdate;
@@ -195,6 +195,7 @@ public class LoadLanguage : MonoBehaviour
     void ReadValueYAML()
     {
         ErrorRead = "";
+
         if (LanguageIndex >= 0 && LanguageIndex < Languages.Count)
         {
             LanguageItem languageItem = Languages[LanguageIndex];
@@ -207,29 +208,36 @@ public class LoadLanguage : MonoBehaviour
                     var yaml = new YamlStream();
                     yaml.Load(streamReader);
 
-                    var rootNode = (YamlMappingNode)yaml.Documents[0].RootNode;
-                    if (rootNode != null)
+                    if (yaml.Documents.Count > 0 && yaml.Documents[0].RootNode is YamlMappingNode rootNode)
                     {
-                        if (rootNode.Children.TryGetValue(new YamlScalarNode(Node), out var nodeValue))
+                        // Assuming "Root" is the root node in your YAML structure
+                        if (rootNode.Children.TryGetValue(new YamlScalarNode("Root"), out var rootValue) && rootValue is YamlMappingNode rootMappingNode)
                         {
-                            var elementNode = ((YamlMappingNode)nodeValue).Children[new YamlScalarNode(Element)];
-
-                            if (elementNode != null && !string.IsNullOrEmpty(elementNode.ToString()))
+                            // Adjust this based on your actual YAML structure
+                            if (rootMappingNode.Children.TryGetValue(new YamlScalarNode(Node), out var menuNode) && menuNode is YamlMappingNode menuMappingNode)
                             {
-                                string value = elementNode.ToString();
-                                TextToChangeLanguage.text = value;
-                                ErrorRead = "Successfully read data";
-                                ReadErrorCode = 0;
+                                if (menuMappingNode.Children.TryGetValue(new YamlScalarNode(Element), out var elementNode) && !string.IsNullOrEmpty(elementNode.ToString()))
+                                {
+                                    string value = elementNode.ToString();
+                                    TextToChangeLanguage.text = value;
+                                    ErrorRead = "Successfully read data";
+                                    ReadErrorCode = 0;
+                                }
+                                else
+                                {
+                                    ErrorRead = "Invalid or missing element: \"GameTitle\"";
+                                    ReadErrorCode = 4;
+                                }
                             }
                             else
                             {
-                                ErrorRead = "Invalid or missing element: \"" + Element + "\"";
-                                ReadErrorCode = 4;
+                                ErrorRead = "Invalid or missing node: \"Menu\"";
+                                ReadErrorCode = 3;
                             }
                         }
                         else
                         {
-                            ErrorRead = "Invalid or missing node: \"" + Node + "\"";
+                            ErrorRead = "Invalid or missing node: \"Root\"";
                             ReadErrorCode = 3;
                         }
                     }

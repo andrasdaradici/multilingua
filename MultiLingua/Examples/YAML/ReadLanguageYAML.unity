@@ -735,9 +735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
-  NewestVersion: 1.0.0
+  NewestVersion: 1.1.0
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
-  NeedToUpdate: 0
+  NeedToUpdate: 1
   TextToChangeLanguage: {fileID: 1020224342}
   PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/YAML/LanguageAsset
   Languages:
@@ -1236,9 +1236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
-  NewestVersion: 1.0.0
+  NewestVersion: 1.1.0
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
-  NeedToUpdate: 0
+  NeedToUpdate: 1
   TextToChangeLanguage: {fileID: 2029368524}
   PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/YAML/LanguageAsset
   Languages:
