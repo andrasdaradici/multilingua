@@ -1,5 +1,6 @@
 # MultiLingua
-A simple tool made for all your Unity Translation needs.
+A simple tool made for all your Unity Translation needs. 
+Includes [NewtonsoftJson](https://github.com/JamesNK/Newtonsoft.Json)
 
 # Features
 - Custom scriptable objects called "Language Items" for every language which include the following properties:
