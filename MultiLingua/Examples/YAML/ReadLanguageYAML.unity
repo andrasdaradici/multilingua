@@ -739,10 +739,10 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 1020224342}
-  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/XML/LanguageAsset
+  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/YAML/LanguageAsset
   Languages:
-  - {fileID: 11400000, guid: bba4d87681e55a64fb61d82caac215a9, type: 2}
-  - {fileID: 11400000, guid: 16d37e31462e7ed4fa76f68ecbe32734, type: 2}
+  - {fileID: 11400000, guid: bbfa3952ba5f71d46ba67b83d86d5b59, type: 2}
+  - {fileID: 11400000, guid: 0fd41b2768e974442a371f5b610f1a92, type: 2}
   Node: Menu
   Element: GameTitle
   ErrorLoad: Succesfully loaded 2 Language Item files.
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 2029368524}
-  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/XML/LanguageAsset
+  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/YAML/LanguageAsset
   Languages:
   - {fileID: 11400000, guid: bbfa3952ba5f71d46ba67b83d86d5b59, type: 2}
   - {fileID: 11400000, guid: 0fd41b2768e974442a371f5b610f1a92, type: 2}
