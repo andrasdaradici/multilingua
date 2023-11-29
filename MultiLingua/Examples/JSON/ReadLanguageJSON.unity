@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029368526}
+      - m_Target: {fileID: 1020224344}
         m_TargetAssemblyTypeName: LoadLanguage, Assembly-CSharp
         m_MethodName: SetLanguageIndex
         m_Mode: 3
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020224340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a900b8f5fde8044bbb663330b04d39, type: 3}
+  m_Script: {fileID: 11500000, guid: 485c6b6cbee856745924171a3508ce9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
@@ -739,13 +739,12 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 1020224342}
-  PathToLanguageItems: Assets/MultiLingua/Examples/JSON/LanguageAsset/
+  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/JSON/LanguageAsset
   Languages:
-  - {fileID: 11400000, guid: e3c9b53b5f4b499418adc182ed941349, type: 2}
-  - {fileID: 11400000, guid: fc120f4624f74184da99e1d1f12f364b, type: 2}
+  - {fileID: 11400000, guid: 364bdb174c0bb15469b13b4a48706804, type: 2}
   Node: Menu
   Element: GameTitle
-  ErrorLoad: Succesfully loaded 2 Language Item files.
+  ErrorLoad: Succesfully loaded 1 Language Item files.
   LoadErrorCode: 0
   ErrorRead: 
   ReadErrorCode: 0
@@ -963,8 +962,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1793717507}
   - component: {fileID: 1793717510}
-  - component: {fileID: 1793717509}
   - component: {fileID: 1793717508}
+  - component: {fileID: 1793717509}
   m_Layer: 5
   m_Name: HU
   m_TagString: Untagged
@@ -1036,7 +1035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2029368526}
+      - m_Target: {fileID: 1020224344}
         m_TargetAssemblyTypeName: LoadLanguage, Assembly-CSharp
         m_MethodName: SetLanguageIndex
         m_Mode: 3
@@ -1232,7 +1231,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2029368522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a900b8f5fde8044bbb663330b04d39, type: 3}
+  m_Script: {fileID: 11500000, guid: 485c6b6cbee856745924171a3508ce9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
@@ -1240,13 +1239,12 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 2029368524}
-  PathToLanguageItems: Assets/MultiLingua/Examples/JSON/LanguageAsset/
+  PathToLanguageItems: Assets/MultiLingua/
   Languages:
-  - {fileID: 11400000, guid: e3c9b53b5f4b499418adc182ed941349, type: 2}
-  - {fileID: 11400000, guid: fc120f4624f74184da99e1d1f12f364b, type: 2}
+  - {fileID: 11400000, guid: 02f7daf72ea60b54c9fa6883d2f0af93, type: 2}
   Node: Subtitles
   Element: Sub1
-  ErrorLoad: Succesfully loaded 2 Language Item files.
+  ErrorLoad: Succesfully loaded 1 Language Item files.
   LoadErrorCode: 0
   ErrorRead: 
   ReadErrorCode: 0

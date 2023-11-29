@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e8510c782f69f4fa899f4d95188225, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f1d19cd5f344f34dab441aa6b2c2a04, type: 3}
   m_Name: 2 - Hungarian
   m_EditorClassIdentifier: 
   Name: Hungarian
   LanguageFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  LanguageFilePath: Assets/MultiLingua/Examples/JSON/Locales/Hungarian
+  LanguageFilePath: Assets/MultiLingua/MultiLingua/Examples/JSON/Locales/Hungarian
   XML: 0
   JSON: 1

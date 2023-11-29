@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020224344}
         m_TargetAssemblyTypeName: LoadLanguage, Assembly-CSharp
         m_MethodName: SetLanguageIndex
         m_Mode: 3
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020224340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a900b8f5fde8044bbb663330b04d39, type: 3}
+  m_Script: {fileID: 11500000, guid: 485c6b6cbee856745924171a3508ce9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
@@ -739,11 +739,13 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 1020224342}
-  PathToLanguageItems: Assets/MultiLingua/Examples/XML/LanguageAsset/
-  Languages: []
-  Node: 
-  Element: 
-  ErrorLoad: 
+  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/XML/LanguageAsset
+  Languages:
+  - {fileID: 11400000, guid: bba4d87681e55a64fb61d82caac215a9, type: 2}
+  - {fileID: 11400000, guid: 16d37e31462e7ed4fa76f68ecbe32734, type: 2}
+  Node: Menu
+  Element: GameTitle
+  ErrorLoad: Succesfully loaded 2 Language Item files.
   LoadErrorCode: 0
   ErrorRead: 
   ReadErrorCode: 0
@@ -1034,7 +1036,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020224344}
         m_TargetAssemblyTypeName: LoadLanguage, Assembly-CSharp
         m_MethodName: SetLanguageIndex
         m_Mode: 3
@@ -1230,7 +1232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2029368522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a900b8f5fde8044bbb663330b04d39, type: 3}
+  m_Script: {fileID: 11500000, guid: 485c6b6cbee856745924171a3508ce9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Version: 1.0.0
@@ -1238,12 +1240,12 @@ MonoBehaviour:
   VersionCheckURL: http://www.lobby.nhely.hu/Assets/MultiLingua/LatestVersion.txt
   NeedToUpdate: 0
   TextToChangeLanguage: {fileID: 2029368524}
-  PathToLanguageItems: Assets/MultiLingua/Examples/XML/LanguageAsset/
+  PathToLanguageItems: Assets/MultiLingua/MultiLingua/Examples/XML/LanguageAsset
   Languages:
-  - {fileID: 11400000, guid: 2639b5fc3db76f9448cfd848076b1fd3, type: 2}
-  - {fileID: 11400000, guid: f36b26d0dfb2de447b4016b18c438d2b, type: 2}
-  Node: 
-  Element: 
+  - {fileID: 11400000, guid: bba4d87681e55a64fb61d82caac215a9, type: 2}
+  - {fileID: 11400000, guid: 16d37e31462e7ed4fa76f68ecbe32734, type: 2}
+  Node: Subtitles
+  Element: Sub1
   ErrorLoad: Succesfully loaded 2 Language Item files.
   LoadErrorCode: 0
   ErrorRead: 
