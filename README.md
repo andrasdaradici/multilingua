@@ -6,7 +6,7 @@ Includes:
 - [YamlDotNet](https://github.com/aaubry/YamlDotNet)
 
 Also available on:
-- [itch.io](https://andrasdaradici.itch.io/multilingua)
+- [Itch.io](https://andrasdaradici.itch.io/multilingua)
 
 # Features
 - Custom scriptable objects called "Language Items" for every language which include the following properties:
