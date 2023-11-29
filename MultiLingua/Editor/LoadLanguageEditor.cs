@@ -14,6 +14,7 @@ public class LoadLanguageEditor : Editor
     bool HasAssignedPath;
 
     LoadLanguage script;
+
     void OnEnable()
     {
         Languages = serializedObject.FindProperty("Languages");

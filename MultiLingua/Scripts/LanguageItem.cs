@@ -17,5 +17,7 @@ namespace MultiLingua
         public bool XML;
         [Tooltip("Use JSON File Type")]
         public bool JSON;
+        [Tooltip("Use YML File Type")]
+        public bool YAML;
     }
 }

@@ -10,6 +10,7 @@ using System.Xml;
 using System.IO;
 using TMPro;
 using System;
+using YamlDotNet.RepresentationModel;
 
 public class LoadLanguage : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class LoadLanguage : MonoBehaviour
                 langIndex = value;
                 if (Languages[langIndex].XML) ReadValueXML();
                 if (Languages[langIndex].JSON) ReadValueJSON();
+                if (Languages[langIndex].YAML) ReadValueYAML();
             }
         }
     }
@@ -186,6 +188,72 @@ public class LoadLanguage : MonoBehaviour
         catch (Exception ex)
         {
             ErrorRead = "Error reading JSON data: " + ex.Message;
+            ReadErrorCode = 1;
+        }
+    }
+
+    void ReadValueYAML()
+    {
+        ErrorRead = "";
+        if (LanguageIndex >= 0 && LanguageIndex < Languages.Count)
+        {
+            LanguageItem languageItem = Languages[LanguageIndex];
+            string yamlFilePath = languageItem.LanguageFilePath + ".yaml";
+
+            try
+            {
+                using (var streamReader = new StreamReader(yamlFilePath))
+                {
+                    var yaml = new YamlStream();
+                    yaml.Load(streamReader);
+
+                    var rootNode = (YamlMappingNode)yaml.Documents[0].RootNode;
+                    if (rootNode != null)
+                    {
+                        if (rootNode.Children.TryGetValue(new YamlScalarNode(Node), out var nodeValue))
+                        {
+                            var elementNode = ((YamlMappingNode)nodeValue).Children[new YamlScalarNode(Element)];
+
+                            if (elementNode != null && !string.IsNullOrEmpty(elementNode.ToString()))
+                            {
+                                string value = elementNode.ToString();
+                                TextToChangeLanguage.text = value;
+                                ErrorRead = "Successfully read data";
+                                ReadErrorCode = 0;
+                            }
+                            else
+                            {
+                                ErrorRead = "Invalid or missing element: \"" + Element + "\"";
+                                ReadErrorCode = 4;
+                            }
+                        }
+                        else
+                        {
+                            ErrorRead = "Invalid or missing node: \"" + Node + "\"";
+                            ReadErrorCode = 3;
+                        }
+                    }
+                    else
+                    {
+                        ErrorRead = "Invalid YAML structure";
+                        ReadErrorCode = 5;
+                    }
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                ErrorRead = "YAML file not found, check the path in the Language Item at index " + LanguageIndex.ToString();
+                ReadErrorCode = 2;
+            }
+            catch (Exception ex)
+            {
+                ErrorRead = "Error reading YAML file: " + ex.Message;
+                ReadErrorCode = 6;
+            }
+        }
+        else
+        {
+            ErrorRead = "Invalid Language Index";
             ReadErrorCode = 1;
         }
     }
