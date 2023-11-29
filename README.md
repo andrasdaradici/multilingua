@@ -5,6 +5,9 @@ Includes:
 - [NewtonsoftJson](https://github.com/JamesNK/Newtonsoft.Json)
 - [YamlDotNet](https://github.com/aaubry/YamlDotNet)
 
+Also available on:
+- [itch.io](https://andrasdaradici.itch.io/multilingua)
+
 # Features
 - Custom scriptable objects called "Language Items" for every language which include the following properties:
   - Name of language.
