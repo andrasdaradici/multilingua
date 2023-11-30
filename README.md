@@ -44,7 +44,7 @@ Also available on:
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/fab23d6c-0db3-4e3b-a1fa-7f754c6623ba)
 
-**Step 2:** - Select the version you want to use
+**Step 2:** - Select the version you want to use (The latest version is 1.1.0, that is recommended as it adds YAML support and it makes the Language Item objects prettier)
 
 ![image](https://github.com/andrasdaradici/multilingua/assets/90605554/00c2bd3e-0243-4fd2-8fcb-be394cb5dc38)
 
