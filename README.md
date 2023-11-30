@@ -1,5 +1,5 @@
 # MultiLingua
-Simplify Unity translation file management with this streamlined tool for effortless organization and loading.​
+Simplify Unity translation file management with this tool for effortless organization and loading.​
 
 Includes: 
 - [NewtonsoftJson](https://github.com/JamesNK/Newtonsoft.Json)
